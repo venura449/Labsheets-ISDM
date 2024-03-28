@@ -1,0 +1,39 @@
+--1--
+Select count(SID)
+from Student
+
+--2--
+select count(distinct CID) AS 'Number Of Courses'
+from student
+
+--2 (more accurate)
+
+select count (distinct CID) AS 'Number Of Courses'
+from Offers
+
+--2(Pretty Accurate)--
+select count(CID) AS 'Number Of Courses'
+from Course
+
+--3--
+Select count(Mcode)
+from Module 
+where NoOfCredits ='3'
+
+
+--4--
+select sum(C_fee) 
+from Course
+
+--5--
+select max(C_fee)
+from Course
+
+
+--6--
+select min(C_fee)
+from Course
+
+--7--
+select AVG(C_fee)
+from Course

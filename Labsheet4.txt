@@ -1,0 +1,29 @@
+
+--1--
+select CID,Count(Mcode)
+from Offers
+group by CID
+
+--2--
+select CID,Count (SID)
+from Student
+group by CID
+
+--3--
+select CID,Accadamic_year,count(Mcode)
+from Offers
+Group by Accadamic_year ,CID
+order by CID
+
+--4--
+select CID ,count(Mcode)
+from offers
+where Semester = '2'
+group by CID
+
+--5--
+select CID ,count(Mcode)
+from offers
+where Semester = '2'
+group by CID
+order by CID ASC

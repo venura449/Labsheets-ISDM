@@ -1,0 +1,33 @@
+--1--
+select * from Student
+
+--2--
+select Mcode , NoOfCredits from Module
+
+--3--
+
+select Sname 
+from Student
+where Sname like 'A%'
+
+--4--
+
+select Sname
+from Student
+where dob < '1996-01-01'
+
+--5--
+select Sname,NIC
+from Student
+where Address Like ('%Colombo%')
+
+--6--
+select *
+from Student
+where Sname Like 'K%'
+AND  CID = 'DS'
+
+--7--
+Select *
+from Student
+where CID ='DS' OR CID = 'IT'
